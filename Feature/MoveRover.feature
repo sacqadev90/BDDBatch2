@@ -7,7 +7,7 @@ Scenario Outline: Move the rover
 	Then rover should be at <newX>, <newY>
 	And rover should be facing <direction>
 
-	Examples:
+	Examples: "Positive testcases"
 		| x | y | direction | newX | newY |
 		| 1 | 2 | N         | 1    | 3    |
 		| 1 | 2 | W         | 0    | 2    |
