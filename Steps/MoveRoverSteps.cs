@@ -48,5 +48,11 @@ namespace MarsRovers.Steps
         {
             rover.GetDirection().Should().Be(direction);
         }
+
+        [When(@"rover turns ([LR]){1}")]
+        public void WhenRoverTurnsL(String turnDirection)
+        {
+            rover.Turn(turnDirection);
+        }
     }
 }
